@@ -39,7 +39,40 @@
       align-items: center; padding: 90px 0;
       background: radial-gradient(ellipse at 80% 30%, #172d50 0%, transparent 55%);
     }
-    .hero-content { max-width: 760px; }
+    .hero-content {
+  max-width: 760px;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.hero-photo {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  border: 3px solid #315b91;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+@media (max-width: 760px) {
+  .hero-layout {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .hero-photo {
+    width: 220px;
+    height: 250px;
+  }
+}
     .eyebrow {
       color: #93c5fd; font-size: 13px;
       text-transform: uppercase; letter-spacing: 2px;
