@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Junaid Majeed is an SEO Specialist and Digital Marketer helping businesses improve search visibility, organic traffic, and online growth.">
+  <meta name="author" content="Junaid Majeed">
+  <title>Junaid Majeed | SEO Specialist & Digital Marketer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 90%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(11,17,32,.95);
+      border-bottom: 1px solid #263247;
+      backdrop-filter: blur(12px);
+    }
+    nav {
+      min-height: 74px; display: flex;
+      align-items: center; justify-content: space-between;
+      gap: 20px;
+    }
+    .logo { font-size: 21px; font-weight: 800; color: white; }
+    .logo span, .accent { color: #60a5fa; }
+    .nav-links { display: flex; gap: 25px; list-style: none; }
+    .nav-links a { color: #cbd5e1; font-size: 14px; }
+    .nav-links a:hover { color: #60a5fa; }
+    .hero {
+      min-height: 570px; display: flex;
+      align-items: center; padding: 90px 0;
+      background: radial-gradient(ellipse at 80% 30%, #172d50 0%, transparent 55%);
+    }
+    .hero-content { max-width: 760px; }
+    .eyebrow {
+      color: #93c5fd; font-size: 13px;
+      text-transform: uppercase; letter-spacing: 2px;
+      font-weight: bold; margin-bottom: 18px;
+    }
+    h1 {
+      color: white; font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.12; letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+    .hero p { max-width: 650px; color: #b8c4d6; font-size: 18px; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+    .btn {
+      display: inline-block; padding: 12px 22px;
+      border-radius: 7px; font-weight: bold; font-size: 14px;
+      transition: .2s;
+    }
+    .btn-primary { background: #2563eb; color: white; }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-2px); }
+    .btn-outline { border: 1px solid #52627b; color: white; }
+    .btn-outline:hover { border-color: #60a5fa; color: #93c5fd; }
+    section { padding: 82px 0; }
+    .section-title { font-size: 32px; color: white; margin-bottom: 12px; }
+    .section-intro { color: #a8b4c7; max-width: 700px; margin-bottom: 35px; }
+    .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; }
+    .about-grid p { color: #b8c4d6; margin-bottom: 15px; }
+    .info-panel, .card {
+      background: #111c30; border: 1px solid #263750;
+      border-radius: 12px; padding: 25px;
+    }
+    .info-panel h3, .card h3 { color: white; margin-bottom: 10px; }
+    .info-panel p { margin-bottom: 8px; font-size: 14px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { transition: .2s; }
+    .card:hover { transform: translateY(-4px); border-color: #4779bb; }
+    .card .number { color: #60a5fa; font-size: 13px; font-weight: bold; }
+    .card p { color: #a8b4c7; font-size: 14px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .skill {
+      background: #172a46; border: 1px solid #2a456b;
+      color: #bfdbfe; padding: 8px 13px;
+      border-radius: 6px; font-size: 13px;
+    }
+    .experience { border-left: 2px solid #3b82f6; padding-left: 23px; }
+    .experience h3 { color: white; margin-bottom: 5px; }
+    .experience .meta { color: #93c5fd; font-size: 14px; margin-bottom: 12px; }
+    .experience p { color: #b8c4d6; }
+    .contact-panel {
+      background: linear-gradient(130deg, #142747, #111c30);
+      border: 1px solid #2c466a; border-radius: 14px;
+      padding: 38px; text-align: center;
+    }
+    .contact-panel p { color: #b8c4d6; margin: 12px auto 24px; max-width: 600px; }
+    footer {
+      border-top: 1px solid #263247; padding: 25px 0;
+      text-align: center; color: #8492a8; font-size: 13px;
+    }
+    .socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 22px; margin-top: 20px; }
+    .socials a { color: #bfdbfe; font-size: 14px; }
+    .socials a:hover { color: white; }
+    @media (max-width: 760px) {
+      .nav-links { gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+      .nav-links a { font-size: 12px; }
+      .logo { font-size: 17px; }
+      .about-grid, .cards { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding: 80px 0; }
+      section { padding: 60px 0; }
+      .section-title { font-size: 27px; }
+      .contact-panel { padding: 28px 18px; }
+    }
+    @media (max-width: 430px) {
+      nav { align-items: flex-start; padding: 17px 0; flex-direction: column; }
+      .nav-links { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">Junaid<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">SEO Specialist · Digital Marketer</div>
+        <h1>Hi, I'm <span class="accent">Junaid Majeed.</span></h1>
+        <p>
+          I help businesses improve their search visibility, attract
+          relevant organic traffic, and build a stronger online presence
+          through practical SEO strategies.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#contact">Let's Connect</a>
+          <a class="btn btn-outline" href="#services">Explore My Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">
+        Helping websites grow with thoughtful, data-informed search
+        engine optimization.
+      </p>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm Junaid Majeed, an SEO Specialist and Digital Marketer
+            with experience in improving website visibility and
+            supporting sustainable organic growth.
+          </p>
+          <p>
+            My work covers technical SEO, on-page and off-page
+            optimization, local SEO, keyword research, content
+            optimization, and link building.
+          </p>
+          <p>
+            I focus on understanding each website's needs and applying
+            practical strategies that support long-term results.
+          </p>
+        </div>
+        <div class="info-panel">
+          <h3>Core Skills</h3>
+          <p>SEO audits and website analysis</p>
+          <p>Keyword research and content strategy</p>
+          <p>Technical and on-page SEO</p>
+          <p>Off-page SEO and link building</p>
+          <p>Local SEO and website optimization</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">SEO Services</h2>
+      <p class="section-intro">
+        SEO solutions designed to improve your website's performance
+        and search presence.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <div class="number">01 / TECHNICAL SEO</div>
+          <h3>Technical SEO</h3>
+          <p>
+            Website audits, crawlability checks, indexing reviews,
+            and technical improvements to support search performance.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">02 / ON-PAGE SEO</div>
+          <h3>On-Page SEO</h3>
+          <p>
+            Keyword research, page optimization, content improvements,
+            internal linking, and search-friendly page structure.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">03 / OFF-PAGE SEO</div>
+          <h3>Off-Page SEO</h3>
+          <p>
+            Link-building strategies and relevant outreach to help
+            strengthen a website's authority and visibility.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">04 / LOCAL SEO</div>
+          <h3>Local SEO</h3>
+          <p>
+            Local search optimization to help businesses improve
+            their visibility in relevant geographic searches.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">05 / SEO AUDITS</div>
+          <h3>SEO Audits</h3>
+          <p>
+            Website reviews that identify SEO issues and provide
+            clear, actionable opportunities for improvement.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">06 / CONTENT</div>
+          <h3>Content Optimization</h3>
+          <p>
+            Content planning and optimization focused on search
+            intent, relevance, and a useful visitor experience.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-intro">
+        My professional work in search engine optimization.
+      </p>
+      <div class="experience">
+        <h3>SEO Specialist</h3>
+        <div class="meta">Bravento Marketing</div>
+        <p>
+          Working on SEO strategies that help businesses improve
+          search visibility and organic traffic. My work includes
+          technical SEO, on-page and off-page optimization,
+          keyword research, local SEO, and link building.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-panel">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>
+          Have a project or want to discuss SEO?
+          Connect with me through LinkedIn or explore my portfolio.
+        </p>
+        <div class="buttons" style="justify-content:center">
+          <a class="btn btn-primary"
+             href="https://www.linkedin.com/in/junaidmajeed07/"
+             target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn
+          </a>
+          <a class="btn btn-outline"
+             href="https://seo-expert-portfolio-8duv.bolt.host/"
+             target="_blank" rel="noopener noreferrer">
+            View My Portfolio
+          </a>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/theglobalbagsstore/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Junaid Majeed. All rights reserved.</p>
+    <p>SEO Specialist · Digital Marketer</p>
+  </div>
+</footer>
+
+</body>
+</html>
